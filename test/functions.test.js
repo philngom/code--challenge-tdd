@@ -115,11 +115,13 @@ test('tests a function that takes in an array and returns the last item', (expec
 });
 
 test('tests a function that returns a random number between 0 and 5', (expect) => {
-    let expected = 0 || 1 || 2 || 3 || 4;
+    const expected = true;
     const actual1 = getRandomNumber();
+    const actual2 = getRandomNumber();
 
 
-    expect.equal(actual1, expected, 'should be number in expected values');
+    expect.equal(actual1 < 5, expected, 'should be number less than 5');
+    expect.equal(actual2 >= 0, expected, 'should be number greater or equals to 0');
     expect.equal(typeof actual1, 'number', 'function should return a number');
 });
 
