@@ -1,162 +1,164 @@
 
 // This function should take a string and add return an new string that adds three exclamation points to the argument.
-/* 
+/*
 
 Input:
 
 'bunny rabbit'
 
-Output: 
+Output:
 
 'bunny rabbit!!!'
 
 */
 
-export function addExclamationPoints() {
-    return true;
+export function addExclamationPoints(string) {
+    return `${string}!!!`;
 }
 
 // This function should take in a number and multiply it by seven
 
-/* 
+/*
 Input:
 
 4
 
-Output: 
+Output:
 
-28 
+28
 */
 
 export function multiplyBySeven(num) {
-    return true;
+    return num * 7;
 }
 
 // This function should take in a number and multiply it by seven then cut the result in half
 
-/* 
+/*
 Input:
 
 4
 
-Output: 
+Output:
 
 24
 
 */
 
 export function multiplyBy12ThenHalve(num) {
-    return true;
+    return (num * 12) / 2;
 }
 
 
 // This function should take in three numbers, divide the first by the second, then multiply the result by the third
 
-/* 
+/*
 Input:
 
 8, 4, 5
 
-Output: 
+Output:
 
 10 (because 8 divided by 4 is 2, times 5 is 10)
 */
 
 export function divideThenMultiply(firstNumber, secondNumber, thirdNumber) {
-    return true;
+    let result = (firstNumber / secondNumber) * thirdNumber;
+    return result;
 }
 
 
 // This function should take in three numbers and return those numbers in an array
 
-/* 
+/*
 Input:
 
 8, 4, 5
 
-Output: 
+Output:
 
 [8, 4, 5]
 */
 
 export function returnAsAnArray(firstNumber, secondNumber, thirdNumber) {
-    return true;
+    let result = [firstNumber, secondNumber, thirdNumber];
+    return result;
 }
 
 // This function should take in three numbers and return those numbers mushed together as a string
 
-/* 
+/*
 Input:
 
 8, 4, 5
 
-Output: 
+Output:
 
 '845'
 */
 
 export function returnAsAString(firstNumber, secondNumber, thirdNumber) {
-    return true;
+    return '' + firstNumber + secondNumber + thirdNumber;
 }
 
 // This function should take in two numbers and return a greeting announcing that the sum of those numbers is today's lucky number
 
-/* 
+/*
 Input:
 
 8, 4
 
-Output: 
+Output:
 
 'Hello! Your lucky number for the day is 12.'
 */
 
 export function makeLuckyGreeting(firstNumber, secondNumber) {
-    return true;
+    return 'Hello! Your lucky number for the day is ' + (firstNumber + secondNumber) + '.';
 }
 
 // This function should take an array and return the second item in the array
 
-/* 
+/*
 Input:
 
 ['kiwi', 'apple', 'orange', 'plum']
 
-Output: 
+Output:
 
 'apple'
 
 */
 
 export function getSecondItem(array) {
-    return true;
+    return array[1];
 }
 
 // This function should take an array and return the LAST item in the array, no matter the array's length
 
-/* 
+/*
 Input:
 
 ['kiwi', 'apple', 'orange', 'plum']
 
-Output: 
+Output:
 
 'plum'
 
 */
 
 export function getLastItem(array) {
-    return true;
+    return array[array.length - 1];
 }
 
 // Bonus question:
 
-// This function should make a random number between 0 and 5. 
+// This function should make a random number between 0 and 5.
 
-// Note that this is an impure function, so you'll have to test it without knowing exactly what it will return. 
+// Note that this is an impure function, so you'll have to test it without knowing exactly what it will return.
 
 // Ask yourself: even if you cannot predict the result exactly, what _do_ you know about what it should return? Use that expectation to write your test
 
 export function getRandomNumber() {
-    return true;
+    return Math.floor(Math.random() * 5);
 }
